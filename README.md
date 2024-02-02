@@ -1,6 +1,6 @@
 # Driffle Note Management Backend Assignment
 ### [API documentation](https://documenter.getpostman.com/view/24519158/2s9Yyv9eb2)
-### [Deployed Live Server Link](https://driffle-backend-assignment.vercel.app/)
+#### [Deployed Live Server Link](https://driffle-backend-assignment.vercel.app/)
 ## Project Overview
 
 This project serves as the backend application for managing user authentication and notes management. It provides functionalities for user sign-up, login, note creation, updating, deletion, and searching. The application ensures data privacy by allowing users access only to their own notes.
@@ -14,6 +14,17 @@ This project serves as the backend application for managing user authentication 
 - JSON Web Token (JWT) for authentication
 - dotenv (for environment variable management)
 - cookie-parser (for handling cookies)
+
+## Application Structure
+The application follows a MVC architecture.
+
+- Controllers: Responsible for manage user authentication and note-related operations, respectively.
+
+- Models: Define the data structure for MongoDB, represent the schema for user information and notes.
+
+- Routes: Express routes handle incoming HTTP requests and delegate them to the appropriate controllers.
+
+- Middleware: Custom middleware, such as authentication middleware.
 
 ## Setup in Local Environment
 
@@ -29,7 +40,8 @@ Follow these steps to set up the project locally:
 1. **Clone the Repository:**
 
    ```bash
-   git clone <github_repo_link>
+   git clone https://github.com/piyushkumarg/driffle-backend-assignment.git
+
    cd driffle-backend-assignment
    ```
 
